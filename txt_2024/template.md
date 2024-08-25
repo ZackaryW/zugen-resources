@@ -6,7 +6,7 @@ date: \today
 # $info.firstname$ $info.lastname$
 
 **core competencies:** 
-$for(profile.corecomp)
+$for(profile.corecomp)$
 $profile.corecomp$
 $endfor$
 
