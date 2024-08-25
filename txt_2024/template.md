@@ -5,7 +5,10 @@ date: \today
 
 # $info.firstname$ $info.lastname$
 
-**Position:** $for(profile.corecomp)$profile.corecomp${\enskip\cdotp\enskip}$endfor$
+**core competencies:** 
+$for(profile.corecomp)
+$profile.corecomp$
+$endfor$
 
 $if(info.address)$
 **Address:** $info.address$
