@@ -1,40 +1,33 @@
----
-title: "$info.firstname$ $info.lastname$ - Résumé"
-date: \today
----
-
-# $info.firstname$ $info.lastname$
-
-**core competencies:** 
-$for(profile.corecomp)$
-$profile.corecomp$
-$endfor$
-
+# $info.firstname$ $info.lastname$ - Résumé
 $if(info.address)$
-**Address:** $info.address$
+Address: $info.address$
 $else$
-**Address:** $info.street$  
+Address: $info.street$  
 $info.city$, $info.province$  
 $info.country$  
 $info.postalcode$
 $endif$
-
-**Mobile:** $info.mobile$  
-**Email:** $info.email$  
+Mobile: $info.mobile$  
+Email: $info.email$  
 $if(info.homepage)$
-**Homepage:** [$info.homepage$]($info.homepage$)
+Homepage: [$info.homepage$]($info.homepage$)
 $endif$
 $if(info.github)$
-**GitHub:** [$info.github$]($info.github$)
+GitHub: [$info.github$]($info.github$)
 $endif$
 $if(info.gitlab)$
-**GitLab:** $info.gitlab$
+GitLab: $info.gitlab$
 $endif$
 $if(info.linkedin)$
-**LinkedIn:** $info.linkedin$
+LinkedIn: $info.linkedin$
 $endif$
 
 ---
+
+core competencies: 
+$for(profile.corecomp)$
+$profile.corecomp$
+$endfor$
 
 ## Summary
 
@@ -67,8 +60,8 @@ $endif$
 $for(exp)$
 ### $exp.position$ at $exp.organization$
 
-**Location:** $exp.location$  
-**Dates:** $exp.datestart$ - $exp.dateend$
+Location: $exp.location$  
+Dates: $exp.datestart$ - $exp.dateend$
 
 $if(exp.items)$
 $for(exp.items)$
@@ -98,9 +91,9 @@ $if(project)$
 $for(project)$
 ### $project.name$
 
-**Type:** $project.type$  
-**Position:** $project.position$  
-**Dates:** $project.datestart$ - $project.dateend$
+Type: $project.type$  
+Position: $project.position$  
+Dates: $project.datestart$ - $project.dateend$
 
 $if(project.items)$
 $for(project.items)$
@@ -133,8 +126,8 @@ $if(otherexp)$
 $for(otherexp)$
 ### $otherexp.position$ at $otherexp.organization$
 
-**Location:** $otherexp.location$  
-**Dates:** $otherexp.datestart$ - $otherexp.dateend$
+Location: $otherexp.location$  
+Dates: $otherexp.datestart$ - $otherexp.dateend$
 
 $if(otherexp.items)$
 $for(otherexp.items)$
@@ -164,8 +157,8 @@ $endif$
 $for(edu)$
 ### $edu.degree$ at $edu.institution$
 
-**Location:** $edu.location$  
-**Dates:** $edu.datestart$ - $edu.dateend$
+Location: $edu.location$  
+Dates: $edu.datestart$ - $edu.dateend$
 
 $if(edu.items)$
 $for(edu.items)$
